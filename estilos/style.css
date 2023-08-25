@@ -106,10 +106,66 @@ div#EMS{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1100px){
-   div#imagem{
-    text-align: right;
-   }
-   div#formulario{
-    text-align: left;
-   }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    section#login{
+        margin: auto;
+        margin-top: 30vh;
+        width: 90vw;
+    }
+
+    div#imagem{
+        float: right;
+        width: 45vw;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        height: 26.1vw;
+    }
+
+    #formulario{
+        display: block;
+        text-align: left;
+        width: 45vw;
+    }
+
+    div.pree{
+        padding: 0px;
+        text-align: left;
+        width: 40vw;
+    }
+
+    .caixa{
+        width: 35vw;
+        transform: translateY(-3px);
+    }
+
+    img.icon{
+        padding-top: 1px;
+        padding-right: 0px;
+        padding-bottom: 1px;
+        padding-left: 5px;
+        transform: translateY(3px);
+    }
+
+    div#Entrar{
+        width: 35vw;
+    }
+
+    #submit{
+        width: 40.5vw;
+    }
+
+    div#EMS{
+        margin-left: 5px;
+        width: 40.5vw;
+    }
+
+    #Esqueci{
+        width: 40.5vw;
+    }
 }
