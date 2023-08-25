@@ -4,6 +4,9 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    --cord:#FCD303;
+    --cord2: #5e4e00;
+    --corp: #E6BB09;
 }
 
 body{
@@ -112,19 +115,31 @@ div#EMS{
         padding: 0px;
     }
 
-    section#login{
+    html{
+        background-image: linear-gradient( to bottom, var(--cord) 40%, var(--cord2));
+    }
+
+    body{
+        border-radius: 10px;
+        width: 90vw;
         margin: auto;
+        margin-bottom: 40vh;
+    }
+
+    section#login{
+        border-radius: 10px;
         margin-top: 30vh;
         width: 90vw;
     }
 
     div#imagem{
+        background-position: center bottom;
         float: right;
         width: 45vw;
         border-top-right-radius: 10px;
         border-top-left-radius: 0px;
         border-bottom-right-radius: 10px;
-        height: 26.1vw;
+        height: 248.9px;
     }
 
     #formulario{
