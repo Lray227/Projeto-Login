@@ -1,2 +1,115 @@
 @charset "UTF-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #E6BB09;
+}
+
+section#login{
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.438);
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10vh;
+    width: 80vw;
+}
+
+div#imagem{
+    background-image: url(../imagens/Fundo\ Login.jpg);
+    background-position: center center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 30vh;
+}
+
+div#formulario{
+    padding: 10px;
+}
+
+div#formulario h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+div#formulario p{
+    padding-top:3px;
+    text-align: left;
+    font-size: small;
+    margin-bottom: 5px;
+}
+
+img.icon{
+    padding-right: 2px;
+    padding-top: 2px;
+    width: 20px;
+    transform: translateY(1.5px);
+}
+
+div.pree{
+    padding-top: 1px;
+    border: 2px solid #FCD303;
+    background-color: #FCD303;
+    border-radius: 5px;
+    width: 70vw;
+    margin: 5px;
+    text-align: center;
+}
+
+.caixa{
+    border-radius: 3px;
+    padding: 4px;
+    border: none;
+    height: 15px;
+    transform: translateY(-4.3px);
+}
+
+div#Entrar{
+    text-align: center;
+}
+
+#submit{
+    color: white;
+    margin: auto;
+    border: none;
+    border-radius: 4px;
+    background-color: #53AAA7;
+    padding: 10px;
+    margin: 5px;
+    width: 70vw;
+}
+
+#submit:hover{
+    background-color: #2D6462;
+    
+}
+
+div#EMS{
+    text-align: center;
+}
+
+#Esqueci{
+    color: #397573;
+    border: 1px solid #53AAA7;
+    border-radius: 4px;
+    width: 70vw;
+    background-color: white;
+    padding: 10px;
+}
+
+#Esqueci:hover{
+    background-color: #6CD3CF;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1100px){
+   div#imagem{
+    text-align: right;
+   }
+   div#formulario{
+    text-align: left;
+   }
+}
