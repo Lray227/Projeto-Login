@@ -119,7 +119,7 @@ div#EMS{
     }
     
     html{
-        background-image: linear-gradient(to bottom, var(--cord) 40%, var(--cord2));
+        background-image: linear-gradient(to bottom, var(--cord2), var(--cord));
         height: 100vh;
     }
 
