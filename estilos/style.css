@@ -47,6 +47,7 @@ div#formulario p{
 }
 
 img.icon{
+    cursor: pointer;
     padding-right: 2px;
     padding-top: 2px;
     width: 20px;
@@ -64,6 +65,7 @@ div.pree{
 }
 
 .caixa{
+    background-color: antiquewhite;
     border-radius: 3px;
     padding: 4px;
     border: none;
@@ -87,6 +89,7 @@ div#Entrar{
 }
 
 #submit:hover{
+    cursor: pointer;
     background-color: #2D6462;
     
 }
@@ -106,6 +109,7 @@ div#EMS{
 
 #Esqueci:hover{
     background-color: #6CD3CF;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1100px){
@@ -113,41 +117,69 @@ div#EMS{
     *{
         margin: 0px;
     }
+    
+    html{
+        background-image: linear-gradient(to bottom, var(--cord) 40%, var(--cord2));
+        height: 100vh;
+    }
+
+    body{
+        border-radius: 20px;
+        width: 80vw;
+        height: 40.5vh;
+        margin: auto;
+    }
 
     section#login{
+        border-radius: 20px;
         padding: 0px;
         margin-top: 30vh;
         width: 80vw;
-        height: 45vh;
+        height: 40.5vh;
     }
 
     div#imagem{
-        border-bottom-left-radius: 10px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
         border-top-right-radius: 0px;
         text-align: left;
+        background-position: center right;
         float: left;
-        height: 45vh;
+        height: 40.5vh;
         width: 30vw;
     }
 
     #formulario{
         padding: 0px;
-        width: 40vw;
-        margin-left: auto;
+        width: 45vw;
+        margin-left: 30vw;
+    }
+
+    #formulario p{
+        padding-left: 7px;
     }
 
     div.pree{
         padding: 0px;
         text-align: center;
-        width: 40vw;
+        width: 47vw;
+    }
+
+    img.icon{
+        margin-top: 2px;
+    }
+
+    .caixa{
+        background-color: antiquewhite;
+        width: 42vw;
     }
 
     #submit{
-        width: 40vw;
+        width: 47.5vw;
     }
 
     #Esqueci{
-        margin: 0px;
-        width: 40vw;
+        margin-left: 5px;
+        width: 47.5vw;
     }
 }
