@@ -11,24 +11,61 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+
+    --color1: #E307C6;
+    --color2: #CB05FA;
+    --color3: #7B07E3;
+    --color4: #4608FD;
+    --color5: #53AAA7;
+    --color6: #2D6462;
+    --color7: #6CD3CF;
+}
+
+html, body{
+    background-color: var(--color1);
 }
 
 main{
-    background-color: blanchedalmond;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 #imagem{
     background-image: url(../imagens/Background.jpeg);
     width: 80vw;
     height: 30vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 section#login{
     background-color: white;
     margin: auto;
     width: 80vw;
+    border-radius: 10px;
     text-align: center;
+}
+
+div.pree{
+    width: 71vw;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--color3);
+}
+
+img.icon{
+    width: 25px;
+    transform: translateY( 4px);
+}
+
+.caixa{
+    padding: 5px;
+    height: 20px;
+    width: 55vw;
+    border-radius: 5px;
+    border: none;
+    background-color: aliceblue;
+
+    transform: translateY( -2.5px);
 }
 
 #formulario{
@@ -36,12 +73,88 @@ section#login{
 }
 
 #formulario p{
+    text-align: left;
     font-size: small;
     padding: 5px;
 }
 
-img.icon{
-    width: 30px;
+#Submit{
+    background-color: var(--color5);
     color: white;
-    background-color: black;
+    border-radius: 4px;
+    border: none;
+    width: 70vw;
+    padding: 10px;
+    margin: 5px;
+}
+
+#Submit:hover{
+    background-color: var(--color6);
+    cursor: pointer;
+}
+
+#Forgot{
+    background-color: white;
+    color: var(--color6);
+    border-radius: 4px;
+    border: 1px solid var(--color5);
+    width: 70vw;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#Forgot:hover{
+    background-color: var(--color7);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    
+    html, body{
+        height: 100vh;
+        background-image: linear-gradient(to bottom, var(--color1), var(--color2));
+    }
+
+
+    section#login{
+        border-radius: 20px;
+    }
+
+    main{
+        margin: auto;
+        width: 80vw;
+    }
+
+    #imagem{
+        border-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        float: left;
+        width: 35vw;
+        height: 37.9vh;
+    }
+
+    div.pree{
+        width: 40vw;
+    }
+
+    .caixa{
+        width: 35vw;
+    }
+
+    #formulario{
+        margin-left: auto;
+        margin-right: 10px;
+        width: 40vw;
+    }
+   
+    #Submit{
+        width: 40vw;
+    }
+
+    #Forgot{
+        width: 40vw;
+        margin-left: 5px;
+    }
+
 }
