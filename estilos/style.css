@@ -4,13 +4,13 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    --cord:#FCD303;
-    --cord2: #5e4e00;
-    --corp: #E6BB09;
+    --cord:#7B07E3;
+    --cord2:#CB05FA;
+    --corp: #4608FD;
 }
 
 body{
-    background-color: #E6BB09;
+    background-color: var(--cord);
 }
 
 section#login{
@@ -23,7 +23,7 @@ section#login{
 }
 
 div#imagem{
-    background-image: url(../imagens/Fundo\ Login.jpg);
+    background-image: url(../imagens/Background.jpeg);
     background-position: center center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -56,8 +56,8 @@ img.icon{
 
 div.pree{
     padding-top: 1px;
-    border: 2px solid #FCD303;
-    background-color: #FCD303;
+    border: 2px solid var(--corp);
+    background-color: var(--corp);
     border-radius: 5px;
     width: 70vw;
     margin: 5px;
@@ -132,7 +132,7 @@ div#EMS{
         padding: 0px;
         margin-top: 30vh;
         width: 80vw;
-        height: 40.5vh;
+        height: 45vh;
     }
 
     div#imagem{
@@ -142,7 +142,7 @@ div#EMS{
         text-align: left;
         background-position: center right;
         float: left;
-        height: 40.5vh;
+        height: 45vh;
         width: 30vw;
     }
 
@@ -178,6 +178,7 @@ div#EMS{
     #Esqueci{
         margin-left: 5px;
         width: 47.5vw;
+        transform: translateX( 50px);
     }
 }
 
