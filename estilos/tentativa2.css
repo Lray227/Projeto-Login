@@ -108,13 +108,18 @@ img.icon{
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) (max-width: 1100px){
     
-    html, body{
+    html{
         height: 100vh;
         background-image: linear-gradient(to bottom, var(--color1), var(--color2));
     }
 
+    body{
+        margin: auto;
+        border-radius: 20px;
+        width: 80vw;
+    }
 
     section#login{
         border-radius: 20px;
@@ -122,6 +127,7 @@ img.icon{
 
     main{
         margin: auto;
+        margin-top: 30vh;
         width: 80vw;
     }
 
@@ -131,7 +137,7 @@ img.icon{
         border-bottom-right-radius: 0px;
         float: left;
         width: 35vw;
-        height: 37.9vh;
+        height: 261px;
     }
 
     div.pree{
@@ -157,4 +163,11 @@ img.icon{
         margin-left: 5px;
     }
 
+}
+
+@media screen and (min-width: 1100px){
+
+    body{
+        width: 100vw;
+    }
 }
