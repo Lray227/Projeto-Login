@@ -7,167 +7,181 @@
     #4608FD
 */
 
+/*Hierarquia:
+    html > body > main > section > div#imagem = div#formulario (div#formulario > form)
+*/
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-    --color1: #E307C6;
-    --color2: #CB05FA;
-    --color3: #7B07E3;
-    --color4: #4608FD;
+    --color1: #5207AD;
+    --color2: #6A09E1;
+    --color3: #924EE6;
+    --color4: #3E2161;
     --color5: #53AAA7;
     --color6: #2D6462;
     --color7: #6CD3CF;
+    --color8: #94CFCD;
 }
 
-html, body{
+html{
+    width: 100vw;
     background-color: var(--color1);
-}
-
-main{
-    margin-top: 10vh;
 }
 
 #imagem{
     background-image: url(../imagens/Background.jpeg);
-    width: 80vw;
-    height: 30vh;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    width: 250px;
+    height: 35vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    background-position: center center;
 }
 
-section#login{
+body{
+    position: relative;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 90vh;
+    width: 250px;
+    margin-top: 5vh;
+
     background-color: white;
-    margin: auto;
-    width: 80vw;
-    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.450);
+    border-radius: 20px;
+    transform: translate(-50%);
+}
+
+h1{
     text-align: center;
+    padding-bottom: 7px;
 }
 
-div.pree{
-    width: 71vw;
-    margin: 5px;
-    border-radius: 5px;
-    background-color: var(--color3);
-}
-
-img.icon{
-    width: 25px;
-    transform: translateY( 4px);
-}
-
-.caixa{
-    padding: 5px;
-    height: 20px;
-    width: 55vw;
-    border-radius: 5px;
-    border: none;
-    background-color: aliceblue;
-
-    transform: translateY( -2.5px);
+p{
+    font-size: small;
+    margin-bottom: 5px;
 }
 
 #formulario{
     padding: 10px;
 }
 
-#formulario p{
-    text-align: left;
-    font-size: small;
-    padding: 5px;
+.icon{
+    width: 25px;
+
+    transform: translateY(6px);
 }
 
-#Submit{
+.dados{
+    background-color: var(--color2);
+    width: 230px;
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dados input{
+    background-color: var(--color8);
+    width: 180px;
+    height: 30px;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 3px;
+}
+
+.buttom{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#Enviar{
     background-color: var(--color5);
     color: white;
-    border-radius: 4px;
-    border: none;
-    width: 70vw;
+    font-size: medium;
+    width: 230px;
     padding: 10px;
-    margin: 5px;
+    border-radius: 5px;
+    border: none;
 }
 
-#Submit:hover{
+#Enviar:hover{
     background-color: var(--color6);
     cursor: pointer;
 }
 
-#Forgot{
+#EMS{
     background-color: white;
+    width: 230px;
+    font-size: medium;
     color: var(--color6);
-    border-radius: 4px;
-    border: 1px solid var(--color5);
-    width: 70vw;
     padding: 10px;
-    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color5);
 }
 
-#Forgot:hover{
+#EMS:hover{
     background-color: var(--color7);
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1100px){
-    
+@media screen and (min-width: 768px){
+
     html{
         height: 100vh;
-        background-image:linear-gradient(to bottom, var(--color1), var(--color2));
-    }
-
-    body{
-        margin: auto;
-        border-radius: 20px;
-        width: 80vw;
-    }
-
-    section#login{
-        border-radius: 20px;
-    }
-
-    main{
-        margin: auto;
-        margin-top: 30vh;
-        width: 80vw;
+        background-image: linear-gradient(to top, #F716C3, var(--color2));
     }
 
     #imagem{
-        border-radius: 20px;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
         float: left;
-        width: 35vw;
-        height: 261px;
-    }
+        width: 25vw;
+        height: 280px;
 
-    div.pree{
-        width: 40vw;
-    }
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
 
-    .caixa{
-        width: 35vw;
+        background-position: center left;
     }
+    
+    main{
+        margin-top: 30vh;
+        height: 280px;
+        width: 80vw;
 
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.450);
+    }
+    
     #formulario{
-        margin-left: auto;
-        margin-right: 10px;
-        width: 40vw;
-    }
-   
-    #Submit{
-        width: 40vw;
+        margin-left: 25vw;
     }
 
-    #Forgot{
-        width: 40vw;
-        margin-left: 5px;
+    .dados{
+        width: 50vw;
     }
 
+    .dados input{
+        width: 45vw;
+    }
+
+    #Enviar{
+        width: 50vw;
+    }
+
+    #EMS{
+        width: 50vw;
+    }
 }
 
-@media screen and (min-width: 1100px){
-
-    body{
-        width: 100vw;
+@media screen and (min-width: 1024px){
+    
+    #imagem{
+        float: right;
     }
 }
