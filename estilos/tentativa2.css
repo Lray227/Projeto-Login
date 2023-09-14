@@ -181,6 +181,11 @@ p{
 
 @media screen and (min-width: 1024px){
 
+    html{
+        height: 100vh;
+        background-image: linear-gradient(to top, #F716C3, var(--color2));
+    }
+
     #imagem{
         width: 475px;
         height: 350px;
