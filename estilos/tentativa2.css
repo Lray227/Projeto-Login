@@ -132,7 +132,7 @@ p{
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
 
     html{
         height: 100vh;
@@ -180,8 +180,57 @@ p{
 }
 
 @media screen and (min-width: 1024px){
-    
+
     #imagem{
+        width: 475px;
+        height: 350px;
         float: right;
+
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    main{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 950px;
+        height: 350px;
+
+        margin-top: 330px;
+    }
+
+    #formulario{
+        width: 470px;
+        margin-right: 300px;
+        margin-left: 0px;
+    }
+
+    h1{
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    p{
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .dados{
+        width: 450px;
+    }
+
+    .dados input{
+        width: 400px;
+    }
+
+    #Enviar{
+        width: 450px;
+    }
+
+    #EMS{
+        width: 450px;
     }
 }
